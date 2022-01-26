@@ -1,0 +1,28 @@
+.expense-item {
+  background-color: #000;
+  display: grid;
+  grid-template-columns: 0.2fr 1fr;
+  justify-items: flex-start;
+  align-items: center;
+  padding: 0 3rem;
+  margin: 1rem 2rem;
+  background-color: #4b4b4b;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 0.8rem;
+}
+
+@media (min-width: 360px) and (max-width: 600px) {
+  .expense-item {
+    grid-template-columns: 0.2fr 1fr;
+    column-gap: 5rem;
+    justify-items: center;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+  .expense-item {
+    grid-template-columns: 0.2fr 1fr;
+    column-gap: 10rem;
+    justify-items: center;
+  }
+}
